@@ -1,0 +1,63 @@
+► Title - 
+	Check for an updated localization recource
+▬ Message - 
+	The path is empty. (Parameter 'path')
+○ Type - 
+	System.ArgumentException
+♦ [Version] Date/Hour - 
+	[2.35.3] 01/07/2022 18:46:56
+▲ Source - 
+	System.Private.CoreLib
+▼ TargetSite - 
+	System.String GetFullPath(System.String)
+♠ StackTrace - 
+   at System.IO.Path.GetFullPath(String path)
+   at System.IO.File.GetLastWriteTime(String path)
+   at ScreenToGif.Util.LocalizationHelper.CheckForUpdates(String culture) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif.Util\LocalizationHelper.cs:line 146
+
+----------------------------------
+
+► Title - 
+	Error while applying automatic task
+▬ Message - 
+	A task was canceled.
+○ Type - 
+	System.Threading.Tasks.TaskCanceledException
+♦ [Version] Date/Hour - 
+	[2.35.3] 01/07/2022 18:48:11
+▲ Source - 
+	System.Private.CoreLib
+▼ TargetSite - 
+	Void ThrowForNonSuccess(System.Threading.Tasks.Task)
+♠ StackTrace - 
+   at System.Windows.Threading.DispatcherOperation.Wait(TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherOperation operation, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback, DispatcherPriority priority, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback)
+   at ScreenToGif.Windows.Editor.UpdateProgress(Int32 value) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Windows\Editor.xaml.cs:line 4357
+   at ScreenToGif.Windows.Editor.MouseClicksAsync(MouseClicksViewModel model) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Windows\Editor.xaml.cs:line 6588
+   at ScreenToGif.Windows.Editor.Load() in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Windows\Editor.xaml.cs:line 3495
+
+----------------------------------
+
+► Title - 
+	Error in loading frames
+▬ Message - 
+	A task was canceled.
+○ Type - 
+	System.Threading.Tasks.TaskCanceledException
+♦ [Version] Date/Hour - 
+	[2.35.3] 01/07/2022 18:48:11
+▲ Source - 
+	System.Private.CoreLib
+▼ TargetSite - 
+	Void ThrowForNonSuccess(System.Threading.Tasks.Task)
+♠ StackTrace - 
+   at System.Windows.Threading.DispatcherOperation.Wait(TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherOperation operation, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback, DispatcherPriority priority, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback)
+   at ScreenToGif.Windows.Editor.Load() in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Windows\Editor.xaml.cs:line 3544
+
+----------------------------------
+

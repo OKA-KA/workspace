@@ -1,0 +1,216 @@
+//Global informations
+AppTitle			@icon変換
+StringVersion		1.21 beta2
+TranslationInfo		日本語(オリジナル)$R$by towofu.
+//Main form
+File1				ファイル(&F)
+FileOpen			開く(&O)...
+FileSaveSingle			単独iconとして保存(&S)...
+FileSaveMulti			マルチiconとして保存(&M)...
+FileSaveICL			アイコンライブラリに保存(&L)...
+FileSaveBmp			bmp形式で保存(&B)...
+FileSavePng			PNG形式で保存(&P)...
+FileReload			ファイルを読み直す(&R)
+FileExit			終了(&X)
+FileSave			保存
+Edit1				編集(&E)
+EditMask			透過マスクの編集(&M)...
+EditAlpha			アルファチャンネルの編集(&A)...
+EditDeleteAlpha			アルファチャンネルを削除する(&D)
+EditCopy			コピー(&C)
+EditPaste			貼り付け(&P)
+EditOverPaste			上書き貼り付け(&O)
+List1				リスト(&L)
+ListUp				上へ(&U)
+ListDown			下へ(&D)
+ListGrpUp			グループを上へ
+ListGrpDown			グループを下へ
+ListSelectAll			すべて選択(&A)
+ListDelete			削除(&D)
+ListDeleteAll			全削除(&C)
+ListListView			詳細表示(&D)
+ListIconView			アイコン表示(&N)
+ListLibraryView			ライブラリ編集(&L)
+ListViewMode_List		詳細表示モード
+ListViewMode_Icon		アイコン表示モード
+ListViewMode_Library		ライブラリ編集モード
+ListGroup			選択アイテムをグループ化する
+ListUnGroup			選択グループを解散する
+ListDeleteGrp		選択グループを削除する
+ListRename			名前の変更
+ListMemoryOrder		現在の並びをデフォルトにする
+Tool1				ツール(&T)
+ToolSelector			条件選択(&S)...
+ToolScreenshot		スクリーンショットを撮る(&T)...
+ToolSaveGrpToIcon	グループごとにマルチアイコンに保存(&G)...
+ToolCountNumberOfGrps	グループ数を数える(&C)
+ToolNumberOfGrps		合計 %d 個のグループがあります。
+ToolRenameIcons		アイコン名の変更(&R)...
+ToolStripFileExt	アイコン名から拡張子を除去(&E)
+Option1				オプション(&O)
+OptionBgColor			背景色の変更(&C)...
+OptionSize			表示サイズ(&Z)
+OptionSize100		100%
+OptionSize200		200%
+OptionSize300		300%
+OptionSize400		400%
+OptionSize500		500%
+OptionSaveBgColor		保存時の背景色(&B)
+OptionSaveBgColor_Black		黒にする(&B)
+OptionSaveBgColor_Color		現在の背景色を使用する(&C)
+OptionSaveBgColor_Nothing	何もしない(&N)
+OptionPNGTransColor			PNG保存時の透過色
+OptionPNGTransColor_Source	元のPNGファイルと同じ
+OptionPNGTransColor_Mask	透過マスクから判断する
+OptionPNGTransColor_Color	現在の背景色を使用
+OptionPNGTransColor_None	透過色を指定しない
+OptionFlatButton		フラットなボタンを使う(&F)
+OptionLanguages			言語(&L)
+OptionPSD			PSD の読み込み方法(&P)
+OptionPSD_Layer			レイヤーごと(&L)
+OptionPSD_Merged		合成イメージ(&M)
+OptionPSD_Both			両方(&B)
+OptionSaveVista				Vistaアイコンの保存(&V)
+OptionSaveVista_Classic		従来のWindows形式(&C)
+OptionSaveVista_Vista		Vista形式(&V)
+OptionSaveVista_ForcePNG	全てのアイコンをPNG圧縮(&P)
+OptionVersion				バージョン情報(&A)...
+SBopenHint			素材ファイルを開く
+SBsIconHint			単独アイコンに保存
+SBmIconHint			マルチアイコンに保存
+SBICLHint			アイコンライブラリ (*.ICL) に保存
+SBbmpHint			BMPに保存
+SBpngHint			PNG形式で保存
+SBReloadHint			ファイルを読み直す
+SBCopyHint			クリップボードへコピー
+SBPasteHint			新規アイコンとして貼り付け
+SBOverPasteHint			上書き貼り付け
+SBupHint			上へ移動
+SBdownHint			下へ移動
+SBGrpUpHint			グループを上に移動
+SBGrpDownHint			グループを下に移動
+SBdeleteHint			選択アイテムを削除
+SBclearHint			全削除
+SBmaskHint			透過マスクの編集
+SBalphaHint			アルファチャンネルの編集
+SBZoomInHint			拡大表示する
+SBZoomOutHint			縮小表示する
+ListViewCol00			アイコン名
+ListViewCol01			横
+ListViewCol02			縦
+ListViewCol03			色(bit)
+StatusBarHint00			全 %d アイテム
+StatusBarHint01			%d アイテム選択中
+IconFilter			icon file (*.ico)|*.ico
+ICLFilter			アイコンライブラリー (*.icl)|*.icl
+BmpFilter			BMP ファイル (*.bmp)|*.bmp
+PNGFilter			PNG ファイル (*.png)|*.png
+OpenDlgTitle			素材を開く
+OpenDlgFilter			素材ファイル(*.bmp, *.ico, *.exe, *.dll, *.icl, *.ocx, *.cpl *.psd, *.png)|*.bmp;*.ico;*.exe;*.dll;*.icl;*.ocx;*.cpl;*.psd;*.png|ビットマップ(*.bmp)|*.bmp|アイコン(*.ico)|*.ico|実行ファイル(*.exe, *.dll, *.icl, *.ocx, *.cpl)|*.exe;*.dll;*.icl;*.ocx;*.cpl|Adobe PhotoShop(*.psd)|*.psd|Portable Network Graph(*.png)|*.png|すべてのファイル(*.*)|*.*
+CautionIconLimit		%d個までしか同時に開けません
+CautionFileExists		%s$R$$R$はすでに存在します。$R$$R$上書きしますか？
+CautionSameFormat		同一サイズ・同一色数のアイコンが2つ以上含まれています。$R$保存することは出来ますが、不正なアイコンとして保存されてしまいます。$R$重複アイコンを削除するか、ICLで保存する事をお奨めします。$R$$R$このまま続けますか？
+CautionReadOnly			%s$R$$R$は読み取り専用のため保存できません。
+CautionSaveICLOnlyAnIcon	アイコンが一つしか選択されていません。$R$$R$このまま続けますか？
+CautionUnsupported		%s$R$$R$は未サポートのファイル形式です。
+CautionNoBlackPalette		%s$R$$R$には黒のパレットが含まれていないため、「保存時に透過箇所を黒にする」オプションはスキップされました。
+CautionDeleteAll		全てのアイコンを削除しますがよろしいですか？
+CautionGroupIcons		連続したアイコンを選択して下さい。
+CautionFileNotExists		%s$R$$R$は存在しないファイルです。
+CautionSortGrouped		ソート前にグループ化されたアイコンを解除してください。
+DirBrowserCaption		保存先フォルダを選択して下さい
+StrOK				OK
+StrCancel			キャンセル
+BtnOK				&OK
+BtnCancel			キャンセル(&C)
+BtnYes				はい(&Y)
+BtnNo				いいえ(&N)
+BtnYesAll			すべてはい(&A)
+//Edit mask form
+2Title				透明マスクの編集
+2Label1Caption			サイズ
+2ShowMask			マスク表示
+2ShowGrid			グリッド表示
+2Preview			プレビュー
+2ContinuePickUp			スポイトを連続で使う
+2SBpenHint			透明にするペン
+2SBeraserHint			不透明にするケシゴム
+2SBcolorHint			色から自動生成
+2SBclearHint			全透過マスク削除
+2sbBGColorHint			プレビュー背景色を変更する
+2sbUndoHint			一つ前の状態に戻す。(Ctrl+Z)
+2sbAlpha2MaskHint		アルファチャンネルから作る
+2StatusBarHint00		XY = (%d,%d)
+2StatusBarHint01		RGB = (%d,%d,%d)
+2ToolHint000			左クリック：透明にする - 右クリック：不透明にする
+2ToolHint001			左クリック：色を選択する - 右クリック：キャンセル
+2ToolHint002			選択した色から透過マスクを自動生成する
+2ToolHint003			透過マスクを全消去する
+2ToolHint004			変更を反映して終了する
+2ToolHint005			変更を破棄して終了する
+2ToolHint006			マスクを編集するにはマスク表示をONにする
+2ToolHint007			左クリック：不透明にする - 右クリック：透明にする
+2ToolHint008			アルファチャンネルからマスクを作る
+//edit alpha form
+3Title				アルファチャンネルの編集
+3sbPenHint			不透明にするブラシ。Shiftを押している間は描画しない。
+3sbEraserHint			透明にするブラシ。Shiftを押している間は描画しない。
+3sbColorHint			背景色を変更する。
+3sbUndoHint			一つ前の状態に戻す。(Ctrl+Z)
+3sbAirHint			エアブラシモードのON/OFFを切り替える。
+3sbMask2AlphaHint		マスクからアルファチャンネルを作る。
+3ImgPowerHint			描画の強度を変更する。
+3ImgBrushHint			ブラシの大きさを変更する。
+3BtnOKHint			変更を反映して終了する。
+3BtnCancelHint			変更を破棄して終了する。
+3ComboSizeHint			表示サイズを指定する。
+3sbBGColorHint			プレビュー背景色を変更する
+3StatusBarAlphaValue		Alpha = (%d)
+3DrawAlphaOnly			アルファチャンネルのみ表示する
+//About box
+4Title				バージョン情報
+4TranslationInfo	翻訳情報: 
+//Icon selector form
+5Title				アイコン選択フォーム
+5UseColor			色数(&C):
+5Color1bit			2色 (1ビット)
+5Color4bit			16色 (4ビット)
+5Color8bit			256色 (8ビット)
+5Color24bit			フルカラー (24ビット)
+5Color32bit			アルファチャンネルつきフルカラー (32ビット)
+5UseSize			サイズ(&S):
+5SizeMethod_Larger		以上
+5SizeMethod_Smaller		以下
+5SizeMethod_Equal		等しい
+5SelectButton			新規選択(&N)
+5MergeButton			追加選択(&A)
+5InvertButton			選択反転(&I)
+5CloseButton			閉じる(ESC)
+//Screenshot form
+6Title				スクリーンショット
+6grpColor			背景色
+6grpFormat			アイコンの並べ方
+6grpMargin			余白
+6grpAction			アクション
+6grpPng				PNG保存オプション
+6grpJpeg			JPEG保存オプション
+6cbPreview			プレビュー(&P)
+6btnClose			終了(ESC)
+6btnSave			保存...(&S)
+6btnClipboard		クリップボードへ(&C)
+6btnChangeColor		色を変更する(&L)...
+6ColIcons			一行のアイコンの数(&N): 
+6OuterMargin		外部余白(&O): 
+6IconMargin			アイコン間隔(&I): 
+6JpegQuality		保存クオリティ(&Q): 
+6Png24bit			24bit
+6Png8bit			8bit
+//Rename Icon Form
+7Title				アイコン名の変更
+7rgRenameTarget		名前変更の対象
+7rbAllIcons			すべてのアイコン(&A)
+7rbSelectedIcons	選択アイコン(&S)
+7edtFind			検索(&F): 
+7edtReplace			置換(&R): 
+7btnPerform			実行(&P)
+7btnClose			閉じる(ESC)

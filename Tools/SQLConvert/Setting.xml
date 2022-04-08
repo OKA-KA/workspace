@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<XML_DATA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Setting>
+    <string>200</string>
+    <string>130</string>
+    <string>160</string>
+    <string>80</string>
+    <string>15</string>
+    <string>10</string>
+    <string>90</string>
+    <string>100</string>
+    <string>100</string>
+    <string>sSQL &amp;= vbCrLf &amp; " SQL文"</string>
+    <string>0</string>
+    <string>80</string>
+    <string>3</string>
+    <string>0</string>
+    <string>↓実行</string>
+    <string>Values.</string>
+    <string>.Append("[SQL文] ")</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>1</string>
+    <string>1</string>
+    <string>1</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string />
+    <string>0</string>
+    <string>1</string>
+    <string>1</string>
+    <string>1</string>
+    <string>2</string>
+    <string>実行</string>
+    <string>処理中</string>
+    <string>0</string>
+    <string>1</string>
+    <string>1</string>
+    <string>0</string>
+    <string>-- ■□ 全角文字発見 □■</string>
+    <string>1</string>
+    <string>Q</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>1</string>
+    <string>2</string>
+    <string>0</string>
+    <string>0</string>
+    <string>0</string>
+    <string>1</string>
+    <string>1</string>
+    <string>1</string>
+    <string>1</string>
+    <string>60</string>
+    <string>1</string>
+  </Setting>
+</XML_DATA>

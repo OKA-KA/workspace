@@ -1,0 +1,19 @@
+► Title - 
+	Check for an updated localization recource
+▬ Message - 
+	The path is empty. (Parameter 'path')
+○ Type - 
+	System.ArgumentException
+♦ [Version] Date/Hour - 
+	[2.35.3] 01/05/2022 18:13:38
+▲ Source - 
+	System.Private.CoreLib
+▼ TargetSite - 
+	System.String GetFullPath(System.String)
+♠ StackTrace - 
+   at System.IO.Path.GetFullPath(String path)
+   at System.IO.File.GetLastWriteTime(String path)
+   at ScreenToGif.Util.LocalizationHelper.CheckForUpdates(String culture) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif.Util\LocalizationHelper.cs:line 146
+
+----------------------------------
+

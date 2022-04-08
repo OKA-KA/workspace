@@ -1,0 +1,200 @@
+History of @icon sushi
+
+1.21 (Feb 04, 2007)
+- Added: Support Vista icons. (read/write from/to *.ICO and *.ICL)
+         Therefore now up to 256x256 of image sizes are supported.
+         If you wish to save to vista format, choose [Options][Icon Save Format][Vista Format]
+- Fixed: View size ComboBox did not work.
+- Fixed: Text color did not inherit windows design settings.
+- Fixed: In some cases, list images and large icon images were not displayed correctly.
+- Fixed: Error occurred when saving many icons to *.ico or *.icl file.
+
+1.20 (Jul 25, 2006)
+- Fixed: @icon sushi was crashed when only one file was opened and taking screenshot.
+- Fixed: When ICL file includes unsupported icon, other supported icons weren't opened.
+- Fixed: Other small fixes.
+- Added: Tools > Strip File Extensions.
+- Added: Tools > Rename Icons.
+- Changed: PNG file with 8bit color and alpah channel will be opened as 24bit PNG.
+- Changed: Now you can open Mask Editor by double click.
+- Changed: Restore zoom size of edit forms.
+- Changed: Open dialog can select even unsupported file extensions.
+
+1.19 (Jan 07, 2006)
+- Fixed: @icon sushi exported corrupted ICL files.
+- Changed: Loading method of ICO files.
+- Changed: When running with non-administrator privileges and can't 
+           save ini file to default path, it will be saved to user 
+           directory.
+
+1.18 (Oct 08, 2005)
+- Fixed: Removed unintentional dialog when saving screenshot to png.
+- Fixed: View mode menus were disabled after closing screenshot form.
+- Fixed: Broken text on the screenshot form.
+- Fixed: Opening screenshot form was delayed if there were many icons.
+- Fixed: Copy to Clipboard didn't work in some cases.
+- Changed: Now screenshot form is resizable.
+- Added: Command line swith for batch convertion PNG to ICO.
+         aicon.exe -c File1.png File2.png File3.png...
+         will save each files to File1.ico File2.ico File3.ico...
+         Another way, create desktop shortcut with -c switch, then
+         drag&drop files to there.
+
+1.17 (Mar 12, 2005)
+* Fixes
+- @icon sushi is crashed when opening file that doesn't have 
+  associated extension.
+- Fixed: "Stream error" when loading unsupported *.ico files.
+- Fixed: Couldn't load some *.ico files.
+- Fixed: Something more.
+
+* Adds
+- Increase icon number limitation to 65535 from 1500.
+- Tool > Save Group to Icons
+- Tool > Count number of groups
+- Added command line switch for batch conversion.
+  * In the mean time, only PNG to ICO is supported.
+    aicon.exe -c File1.png File2.png File3.png...
+    will convert to File1.ico File2.ico File3.ico...
+  * Small TIPS, create desktop shortcut with -c switch and 
+    drag&drop files will work the same.
+- "Screenshot Window" remember custom colors in color dialog.
+
+* 1.16 (Sep 14, 2004)
+* Fixes
+  - When loading PNG, transparent color was force set to white if it 
+    doesn't have transparent color.
+  - Some numerical keys didn't work on Selector form.
+  - Unintended hotkeys worked on Selector form.
+  - Some minor problems.
+
+* Adds
+  - Taking screenshot function.
+  - PNG transparent color option to save to PNG.
+  - Now about box shows translation infos.
+  - Now you can sort icons by clicking list columns.
+  - "Set current order to default" function for sorting.
+  - Add "Preview" button on the Edit Mask Window to avoid confusion.
+  - Now "BG Color when save" is applied to PNG too.
+
+* 1.15 (Jan 05, 2004)
+* Fixes
+  - Couldn't open filename that contains environment-variable strings (like %SystemRoot%).
+  - No tool tips on the "Up this group" and "Down this group" button.
+  - other small stuffs.
+
+* Adds
+  - Added Delete icon group function.
+  - Added Move icon group functions. (Up this group/Down this group)
+  - Now Unsupported file opens its related icon.
+  - Now Shortcut(*.lnk) files open their original files.
+  - Added "about @icon sushi" dialog.
+
+* 1.14 (Aug 21, 2003)
+* Fixes
+  - Fixed problem window position was not remembered.
+  - Fixed noise of Icon View Mode.
+
+* Adds
+  - Add Icon Selector.
+  - Now @icon sushi remember Most Recent Used Files.
+  - Now @icon sushi remember View Mode.
+
+* 1.13 (May 27, 2003)
+* Fixes
+  - Broken image of 32bit icon.
+  - Reopen file wasn't work correctly.
+
+* Adds
+  - Support group of ICL.
+  - Delete Alpha channel function.
+  - Customize hotkeys of main window.
+
+* Changes
+  - Add "Rename" to Main menu.
+
+* 1.11 (Mar 27, 2003)
+* Fixes:
+ - Some *.PSD files were not read correctly.
+ - Some *.EXE files were not read correctly.
+ - Background color was not saved.
+ - Saving multiple PNG caused problem.
+
+* Add:
+ - Icon list view is available.
+
+* Changes:
+ - Change method of preview on Edit Mask window.
+ - PSD layer blend mode, layer opacity.(many limitations yet)
+ - "Unsupported file" dialog shows error ID.
+ - Menu has been changed a little.
+
+* 1.09 (2002.11.16)
+- Fixes:
+    :Reversed Alpah Channel of 32bit PNG
+    :"Fill transparent pixs with Black when save" was not work 
+     correctly with 32bit images.
+- Changes
+    :Language file format have been changed. And you can select 
+     language from menu.
+    :Some necessary caution dialogs are added.
+- Adds
+    :"Create Mask from Alpha" function on Mask Window.
+    :"Create Alpha from Mask" function on Alpha Window.
+    :"Show only Alpha Channel" function on Alpha Window.
+
+* 1.07 (2002.08.07)
+:Fix: With WinXP, icon that contains both 32bit and 8bit image
+      were not shown correctly.
+:Fix: Some EXE were not read correctly.
+:Fix: Combobox position problem on "Mask Edit Window".
+:Add "Change Background Color" button on "Mask Edit Window".
+:Add "Use color picker continually" checkbox on "Mask Edit Window".
+:Language file update:
+    Insert Line 74: "Use color picker continually"
+
+* 1.06 (2002.04.29)
+:Fix: "Fill transparent pixs with Black when save" option did not 
+ work with 8bit image.
+:Language files check on startup is temporarily disabled.
+
+
+* 1.05 (2002.04.07)
+:Fix: Inverse Alpha channel of PNG.
+
+* 1.04 (2002.03.31)
+:Support Import/Export PNG.
+:The max number of icons is increased to 1500 from 1000. (This NOT 
+ mean @icon sushi got better performance. Just to read Shell32.dll 
+ of WinXP.)
+:On mask edit window, background color will be shown instead of 
+ mask while show mask option is off.
+:New style of toolbar.
+:Fix: On mask edit window, Cancel of pickup tool did not work.
+:Fix: Some PSD files caused error when read.
+:Sorry, increased file size. It is side effects of changing 
+ development tool Delphi2 to Delphi6.
+
+* 1.03 (2002.01.29)
+:Import/Export *.ICL (also 16bit executable files).
+:Fix: could not open "READ ONLY" files.
+:Fix: Font problems on non-English Windows.
+:language file has some changes.
+ Word "$R$" is return tag. On dialog boxes, this tag will replaced 
+ with return. By this tag, some keys are removed.
+:some other changes.
+
+* 1.02 (2001.12.21)
+:Use current BG-color when save (optional).
+:Add image type icon to list - like Explorer.
+:"Reopen Bitmap" was replaced by "Reopen File".
+
+* 1.01 (2001.10.27)
+:WindowsXP related functions
+:Copy to / Paste from Clipboard
+:Fill transparent pixels with Black when save (Optional)
+:Reopen bitmap files function
+:Restore window size, window position by *.ini file
+
+* 1.00 (2001/09/26)
+  : Public release.

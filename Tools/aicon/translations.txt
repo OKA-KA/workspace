@@ -1,0 +1,160 @@
+About translation of language files ==================================
+
+  - Language files are now in "Languages" folder.
+  - File name must be *****.lng, ***** is language name
+    i.e.) English.lng
+  - Key and Value are separated by AT LEAST a TAB. Does not matter 
+    number of TABs, you can use some tabs for your readability.
+  - The Line start with "StringVersion" MUST be the same as 
+    "Default.lng" of each version.
+  - Does not matter order of each line.
+  - Line start with "//" is comment that will be ignored.
+  - I recommend to use text comparison tool like PrestoSoft's 
+    ExamDiff to check changes from older file.
+    http://www.prestosoft.com/
+    http://www.prestosoft.com/ps.asp?page=edp_examdiff
+  - TranslationInfo key may be displayed on aboutbox, so you can 
+    describe any informations here.
+
+Changes 1.16 > 1.17 ==================================================
+
+* Changed lines: 
+
+StringVersion	1.17
+
+* Added lines: 
+
+ToolSaveGrpToIcon	Save &Group to Icons...
+ToolCountNumberOfGrps	&Count number of groups
+ToolNumberOfGrps	There are %d icon group(s).
+
+Changes 1.15 > 1.16 ==================================================
+
+* Changed lines: 
+
+StringVersion		1.16
+TranslationInfo		English.$R$Translated by towofu.
+FileOpen			&Open...
+FileSaveSingle		Save as &Single Icon(s)...
+FileSaveMulti		Save as &Multiple Icon...
+FileSaveICL			Save as Icon &Library...
+FileSaveBmp			Save as &Bitmap(s)...
+FileSavePng			Save as &PNG...
+EditMask			Edit Transparency &Mask...
+EditAlpha			Edit &Alpha Channel...
+OptionBgColor		Background &Color...
+OptionVersion		&About @icon sushi...
+ToolSelector		Icon &Selector...
+ToolScreenshot		&Take Screenshot...
+
+* Added lines: 
+
+ListMemoryOrder				Set current order to default
+OptionPNGTransColor			PNG Transparent Color when save
+OptionPNGTransColor_Source	Use &source file color
+OptionPNGTransColor_Mask	Generate from &Mask
+OptionPNGTransColor_Color	Use current BG &Color
+OptionPNGTransColor_None	Do&n't set Trans Color
+CautionSortGrouped			Disband all of grouped icons before sorting.
+2Preview			Preview
+4Title				Version info
+4TranslationInfo	Translation Info: 
+6Title				Take Screenshot
+6grpColor			Background Color
+6grpFormat			Icon Order
+6grpMargin			Margin
+6grpAction			Actions
+6grpPng				PNG Save Options
+6grpJpeg			JPEG Save Options
+6cbPreview			Preview(&P)
+6btnClose			Close(ESC)
+6btnSave			Save...(&S)
+6btnClipboard		To Clipboard(&C)
+6btnChangeColor		Change Color...(&L)
+6ColIcons			Ico&n count in a col: 
+6OuterMargin		&Outer Margin: 
+6IconMargin			&Icon Margin: 
+6JpegQuality		Save &Quality: 
+6Png24bit			24bit
+6Png8bit			8bit
+
+Changes 1.14 > 1.15 ==================================================
+
+* Changed: - Please change these lines.
+StringVersion	1.15
+OpenDlgFilter	Src Files(*.bmp, *.ico, *.exe, *.dll, *.icl, *.psd, *.png)|*.bmp;*.ico;*.exe;*.dll;*.icl;*.psd;*.png|Bitmap(*.bmp)|*.bmp|Icon(*.ico)|*.ico|Executable(*.exe, *.dll, *.icl)|*.exe;*.dll;*.icl|Adobe PhotoShop(*.psd)|*.psd|Portable Network Graph(*.png)|*.png|All files(*.*)|*.*
+
+* Added: - Please add these lines. It doesn't matter where you add to.
+SBGrpUpHint	Move Up Group
+SBGrpDownHint	Move Down Group
+ListDeleteGrp	Delete selected Group
+FileSave	Save
+OptionVersion	&About @icon sushi
+
+Changes 1.13 > 1.14 ==================================================
+
+* Changed: - Please change those lines.
+StringVersion	1.14
+
+* Added: - Please add those lines. It doesn't matter where you add to.
+CautionFileNotExists		%s$R$$R$isn't existent file.
+Tool1				&Tools
+ToolSelector			Icon &Selector
+5Title				Icon Selector
+5UseColor			&Color depth:
+5Color1bit			2 colors (1bit)
+5Color4bit			16 colors (4bit)
+5Color8bit			256 colors (8bit)
+5Color24bit			16.7 million colors (24bit)
+5Color32bit			16.7 million colors with Alpha (32bit)
+5UseSize			&Size:
+5SizeMethod_Larger		or Larger
+5SizeMethod_Smaller		or Smaller
+5SizeMethod_Equal		Equal to
+5SelectButton			Create &New Selection
+5MergeButton			&Add to selection
+5InvertButton			&Invert Selection
+5CloseButton			Close(ESC)
+
+Changes 1.11 > 1.13 ==================================================
+
+* Changed: - Please change those lines.
+StringVersion	1.13
+
+* Added: - Please add those lines. It doesn't matter where you add to.
+EditDeleteAlpha			Delete Alpha Channel
+ListGroup			Group selected
+ListLibraryView			&Library Edit
+ListRename			Rename
+ListUnGroup			Disband this group
+ListViewMode_Icon		Icon View Mode
+ListViewMode_Library		Library Edit Mode
+ListViewMode_List		Detail View Mode
+SBZoomInHint			Zoom In
+SBZoomOutHint			Zoom Out
+CautionDeleteAll		Are you sure to DELETE ALL icons?
+CautionGroupIcons		Continuous items must be selected.
+3sbBGColorHint			Change preview BG-color
+
+
+Chages 1.09 > 1.11 ===================================================
+
+* Changed: - Please change those lines.
+StringVersion	1.11
+
+* Added: - Please add those lines. Does not matter where you add to.
+OptionPSD			&PSD Opening method
+OptionPSD_Layer			Each &Layer
+OptionPSD_Merged		&Merged Image
+OptionPSD_Both			&Both
+2sbBGColorHint			Change preview BG-color
+ListListView			&Detail View
+ListIconView			Ico&n View
+OptionSaveBgColor		&BG color when save
+OptionSaveBgColor_Black		Fill with &Black
+OptionSaveBgColor_Color		Fill with current BG &Color
+OptionSaveBgColor_Nothing	do &Nothing
+
+* Removed: - Those lines can be there, but recommend to remove.
+OptionTransBlack
+OptionUseBGColor

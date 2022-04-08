@@ -1,0 +1,216 @@
+//Global information
+AppTitle			@icon sushi
+StringVersion			1.21 beta2
+TranslationInfo		English.$R$Translated by towofu.  Edited by rodesj.
+//Main form
+File1				&File
+FileOpen			&Open...
+FileSaveSingle			Save as &Single Icon(s)...
+FileSaveMulti			Save as &Multiple Icon...
+FileSaveICL			Save as Icon &Library...
+FileSaveBmp			Save as &Bitmap(s)...
+FileSavePng			Save as &PNG...
+FileReload			&Reopen File
+FileExit			E&xit
+FileSave			Save
+Edit1				&Edit
+EditMask			Edit Transparency &Mask...
+EditAlpha			Edit &Alpha Channel...
+EditDeleteAlpha			&Delete Alpha Channel
+EditCopy			&Copy
+EditPaste			&Paste (as New)
+EditOverPaste			Paste (&Overwrite)
+List1				&List
+ListUp				Move &Up
+ListDown			Move &Down
+ListGrpUp			Move Group Up
+ListGrpDown			Move Group Down
+ListSelectAll			Select &All
+ListDelete			&Delete
+ListDeleteAll			&Clear All
+ListListView			&Detail View
+ListIconView			Ico&n View
+ListLibraryView			&Library Edit
+ListViewMode_List		Detail View Mode
+ListViewMode_Icon		Icon View Mode
+ListViewMode_Library		Library Edit Mode
+ListGroup			Group
+ListUnGroup			Ungroup
+ListDeleteGrp		Delete Group
+ListRename			&Rename
+ListMemoryOrder		Set Current Order as Default
+Option1				&Options
+OptionBgColor			Background &Color...
+OptionSize			&Zoom
+OptionSize100		100%
+OptionSize200		200%
+OptionSize300		300%
+OptionSize400		400%
+OptionSize500		500%
+OptionSaveBgColor		Save with &BG Color
+OptionSaveBgColor_Black		Fill with &Black
+OptionSaveBgColor_Color		Fill with Current BG &Color
+OptionSaveBgColor_Nothing	&No Fill
+OptionPNGTransColor			Save with PNG &Transparent Color
+OptionPNGTransColor_Source	Use &Source File Color
+OptionPNGTransColor_Mask	Generate from &Mask
+OptionPNGTransColor_Color	Use Current BG &Color
+OptionPNGTransColor_None	Do&n't Set Trans Color
+OptionFlatButton			Use &Flat Buttons
+OptionLanguages				&Languages
+OptionPSD					Open with &PSD Method
+OptionPSD_Layer				Each &Layer
+OptionPSD_Merged			&Merged Image
+OptionPSD_Both				&Both
+OptionSaveVista				&Icon Save Format
+OptionSaveVista_Classic		&Classic Windows Format
+OptionSaveVista_Vista		&Vista Format
+OptionSaveVista_ForcePNG	Vista Format with &PNG Compression
+OptionVersion				&About @icon sushi...
+Tool1				&Tools
+ToolSelector		Icon &Selector...
+ToolScreenshot		&Take Screenshot...
+ToolSaveGrpToIcon	Save Selected &Group(s) as Icons...
+ToolCountNumberOfGrps	&Count Number of Groups
+ToolNumberOfGrps		There are %d icon group(s).
+ToolRenameIcons		&Rename Icons...
+ToolStripFileExt	Strip File &Extensions
+SBopenHint			Open file
+SBsIconHint			Save as single icon(s)
+SBmIconHint			Save as multiple icon
+SBICLHint			Save as icon library (*.ICL)
+SBbmpHint			Save as bitmap(s)
+SBpngHint			Save as PNG
+SBReloadHint			Reopen selected image
+SBCopyHint			Copy to clipboard
+SBPasteHint			Paste as new item
+SBOverPasteHint			Paste over selected item
+SBupHint			Move up
+SBdownHint			Move down
+SBGrpUpHint			Move group up
+SBGrpDownHint			Move group down
+SBdeleteHint			Delete selected item(s)
+SBclearHint			Delete all items
+SBmaskHint			Edit transparency mask
+SBalphaHint			Edit alpha channel
+SBZoomInHint			Zoom in
+SBZoomOutHint			Zoom out
+ListViewCol00			Icon Name
+ListViewCol01			Width
+ListViewCol02			Height
+ListViewCol03			Color Depth
+StatusBarHint00			%d item(s)
+StatusBarHint01			Select %d item(s)
+IconFilter			Icon file (*.ico)|*.ico
+ICLFilter			Icon library (*.icl)|*.icl
+BmpFilter			BMP file (*.bmp)|*.bmp
+PNGFilter			PNG file (*.png)|*.png
+OpenDlgTitle			Open Source File(s)
+OpenDlgFilter			Source files (*.bmp, *.ico, *.exe, *.dll, *.icl, *.ocx, *.cpl *.psd, *.png)|*.bmp;*.ico;*.exe;*.dll;*.icl;*.ocx;*.cpl;*.psd;*.png|Bitmaps (*.bmp)|*.bmp|Icons (*.ico)|*.ico|Executables (*.exe, *.dll, *.icl, *.ocx, *.cpl)|*.exe;*.dll;*.icl;*.ocx;*.cpl|Adobe PhotoShop (*.psd)|*.psd|Portable Network Graphics (*.png)|*.png|All files (*.*)|*.*
+CautionIconLimit		You can't open more than %d icons.
+CautionFileExists		%s$R$$R$already exists.$R$$R$Do you want to replace it?
+CautionSameFormat		Contains two or more icons of the same size and same colors.$R$This process will make a defective icon.$R$It is recommended to remove the double icon or save as ICL.$R$$R$Do you wish to continue?
+CautionReadOnly			Failed to save.$R$$R$%s$R$$R$is READ ONLY file.
+CautionSaveICLOnlyAnIcon	Only ONE icon is selected$R$$R$Do you accept to continue?
+CautionUnsupported		%s$R$$R$is not a supported file.
+CautionNoBlackPalette		%s$R$$R$has NO black in the palette, so "Fill transparent pixels with black when saving" option will be skipped.
+CautionDeleteAll		Are you sure you want to delete ALL icons?
+CautionGroupIcons		Continuous items must be selected.
+CautionFileNotExists		%s$R$$R$file doesn't exist.
+CautionSortGrouped		Disband all grouped icons before sorting.
+DirBrowserCaption		Please select target directory.
+StrOK				OK
+StrCancel			Cancel
+BtnOK				&OK
+BtnCancel			&Cancel
+BtnYes				&Yes
+BtnNo				&No
+BtnYesAll			Yes to &All
+//Edit mask form
+2Title				Edit Transparency Mask
+2Label1Caption			Size
+2ShowMask			Show Mask
+2ShowGrid			Show Grid
+2Preview			Preview
+2ContinuePickUp			Use Color Picker Repeatedly
+2SBpenHint			Transparency tool
+2SBeraserHint			Opacity tool
+2SBcolorHint			Create mask by color
+2SBclearHint			Clear all transparency mask
+2sbBGColorHint			Change preview BG-color
+2sbUndoHint			Undo (Ctrl+Z)
+2sbAlpha2MaskHint		Create from alpha
+2StatusBarHint00		XY = (%d,%d)
+2StatusBarHint01		RGB = (%d,%d,%d)
+2ToolHint000			L-click: Make transparent / R-click: Opposite action (Make opaque)
+2ToolHint001			L-click: Select color / R-click: Cancel
+2ToolHint002			Create mask by color
+2ToolHint003			Clear all transparency mask
+2ToolHint004			Save and exit
+2ToolHint005			Exit and discard changes
+2ToolHint006			You need check 'Show mask' to edit mask
+2ToolHint007			L-click: Make opaque / R-click: Opposite action (Make transparent)
+2ToolHint008			Create mask from alpha channel
+//edit alpha form
+3Title				Edit Alpha Channel
+3sbPenHint			Transparency tool. Does NOT draw when SHIFT key is held down.
+3sbEraserHint			Opacity tool. Does NOT draw when SHIFT key is held down.
+3sbColorHint			Change background color
+3sbUndoHint			Undo (Ctrl+Z)
+3sbAirHint			Toggle normal / Airbrush mode
+3sbMask2AlphaHint		Create alpha channel from mask
+3ImgPowerHint			Change brush power
+3ImgBrushHint			Change brush size
+3BtnOKHint			Save and exit
+3BtnCancelHint			Exit and discard changes
+3ComboSizeHint			Set zoom size
+3sbBGColorHint			Change preview BG-color
+3StatusBarAlphaValue		Alpha = (%d)
+3DrawAlphaOnly			Show Alpha Channel Only
+//
+4Title				Version Info
+4TranslationInfo	Translation Info: 
+//Icon selector form
+5Title				Icon Selector
+5UseColor			&Color Depth:
+5Color1bit			2 colors (1-bit)
+5Color4bit			16 colors (4-bit)
+5Color8bit			256 colors (8-bit)
+5Color24bit			16.7 million colors (24-bit)
+5Color32bit			16.7 million colors with alpha (32-bit)
+5UseSize			&Size:
+5SizeMethod_Larger		or Larger
+5SizeMethod_Smaller		or Smaller
+5SizeMethod_Equal		Equal to
+5SelectButton			Create &New Selection
+5MergeButton			&Add to Selection
+5InvertButton			&Invert Selection
+5CloseButton			Close(ESC)
+//Screenshot form
+6Title				Take Screenshot
+6grpColor			Background Color
+6grpFormat			Icon Order
+6grpMargin			Margin
+6grpAction			Actions
+6grpPng				PNG Save Options
+6grpJpeg			JPEG Save Options
+6cbPreview			Preview(&P)
+6btnClose			Close(ESC)
+6btnSave			Save...(&S)
+6btnClipboard		To Clipboard(&C)
+6btnChangeColor		Change Color...(&L)
+6ColIcons			Ico&n count in a col: 
+6OuterMargin		&Outer Margin: 
+6IconMargin			&Icon Margin: 
+6JpegQuality		Save &Quality: 
+6Png24bit			24-bit
+6Png8bit			8-bit
+//Rename Icon Form
+7Title				Rename Icons
+7rgRenameTarget		Rename Target
+7rbAllIcons			&All Icons
+7rbSelectedIcons	&Selected Icons
+7edtFind			&Find: 
+7edtReplace			&Replace With: 
+7btnPerform			&Perform
+7btnClose			Close(ESC)

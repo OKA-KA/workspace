@@ -1,0 +1,3 @@
+if( selecting != 0 ) {
+    run "C:\\PROGRA~1\\NodaSoft@\\SQLConvert\\SQLConvert.exe <con >con";
+}

@@ -1,0 +1,334 @@
+► Title - 
+	Check for an updated localization recource
+▬ Message - 
+	The path is empty. (Parameter 'path')
+○ Type - 
+	System.ArgumentException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:12:02
+▲ Source - 
+	System.Private.CoreLib
+▼ TargetSite - 
+	System.String GetFullPath(System.String)
+♠ StackTrace - 
+   at System.IO.Path.GetFullPath(String path)
+   at System.IO.File.GetLastWriteTime(String path)
+   at ScreenToGif.Util.LocalizationHelper.CheckForUpdates(String culture) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif.Util\LocalizationHelper.cs:line 146
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:13:55
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:14:19
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:15:06
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:15:25
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:15:25
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:15:34
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
+► Title - 
+	Persisting the current project info.
+▬ Message - 
+	Type 'ScreenToGif.Util.SimpleKeyGesture' with data contract name 'SimpleKeyGesture:http://schemas.datacontract.org/2004/07/ScreenToGif.Util' is not expected. Add any types not known statically to the list of known types - for example, by using the KnownTypeAttribute attribute or by adding them to the list of known types passed to DataContractSerializer.
+○ Type - 
+	System.Runtime.Serialization.SerializationException
+♦ [Version] Date/Hour - 
+	[2.35.2] 01/04/2022 18:15:50
+▲ Source - 
+	System.Private.DataContractSerialization
+▼ TargetSite - 
+	Void SerializeAndVerifyType(System.Runtime.Serialization.DataContract, System.Runtime.Serialization.XmlWriterDelegator, System.Object, Boolean, System.RuntimeTypeHandle, System.Type)
+♠ StackTrace - 
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeAndVerifyType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, Boolean verifyKnownType, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.SerializeWithXsiType(XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle objectTypeHandle, Type objectType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle, Type declaredType)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfanyTypeToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteArrayOfFrameInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , CollectionDataContract )
+   at System.Runtime.Serialization.Json.JsonCollectionDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.InternalSerialize(XmlWriterDelegator xmlWriter, Object obj, Boolean isDeclaredType, Boolean writeXsiType, Int32 declaredTypeID, RuntimeTypeHandle declaredTypeHandle)
+   at WriteProjectInfoToJson(XmlWriterDelegator , Object , XmlObjectSerializerWriteContextComplexJson , ClassDataContract , XmlDictionaryString[] )
+   at System.Runtime.Serialization.Json.JsonClassDataContract.WriteJsonValueCore(XmlWriterDelegator jsonWriter, Object obj, XmlObjectSerializerWriteContextComplexJson context, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.XmlObjectSerializerWriteContextComplexJson.WriteDataContractValue(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.XmlObjectSerializerWriteContext.SerializeWithoutXsiType(DataContract dataContract, XmlWriterDelegator xmlWriter, Object obj, RuntimeTypeHandle declaredTypeHandle)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObjectContent(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph)
+   at System.Runtime.Serialization.XmlObjectSerializer.InternalWriteObject(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.XmlObjectSerializer.WriteObjectHandleExceptions(XmlWriterDelegator writer, Object graph, DataContractResolver dataContractResolver)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(XmlDictionaryWriter writer, Object graph)
+   at System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(Stream stream, Object graph)
+   at ScreenToGif.Model.ProjectInfo.Persist(String path) in C:\Users\nicke\source\repos\ScreenToGif\ScreenToGif\Model\ProjectInfo.cs:line 156
+
+----------------------------------
+
